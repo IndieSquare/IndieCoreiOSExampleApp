@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
-
+#import <IndieCore/IndieCore.h>
+@interface ViewController : UIViewController<IndieCoreDelegate>
+@property(nonatomic,strong)IndieCore * iCore;
++ (NSOperationQueue *)connectionQueue;
 @end
 
